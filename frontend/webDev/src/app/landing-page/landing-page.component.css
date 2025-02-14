@@ -1,13 +1,11 @@
-/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Full-screen Background */
   body, html {
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +14,6 @@
     text-align: center;
   }
   
-  /* Centering Container */
   .container {
     margin-top: 15%;
     display: flex;
@@ -25,7 +22,6 @@
     width: 100%;
   }
   
-  /* Landing Box */
   .landing-box {
     background: #fff;
     padding: 40px;
@@ -35,7 +31,6 @@
     animation: fadeIn 1s ease-in-out;
   }
   
-  /* Title */
   .title {
     font-size: 28px;
     font-weight: bold;
@@ -43,14 +38,12 @@
     margin-bottom: 15px;
   }
   
-  /* Subtitle */
   .subtitle {
     font-size: 16px;
     color: #555;
     margin-bottom: 20px;
   }
   
-  /* Button */
   .btn {
     width: 100%;
     background: linear-gradient(90deg, #4A00E0, #8E2DE2);
@@ -68,7 +61,6 @@
     box-shadow: 0px 5px 15px rgba(142, 45, 226, 0.4);
   }
   
-  /* Fade-in Animation */
   @keyframes fadeIn {
     from {
       opacity: 0;
