@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.css'
+  styleUrls: ['./landing-page.component.css'],
 })
 export class LandingPageComponent {
+  constructor(private authService: AuthService, private router: Router) {}
 
+  logout(): void {
+    this.authService.logout();
+    this.router.navigate(['/']); 
+  }
 }
