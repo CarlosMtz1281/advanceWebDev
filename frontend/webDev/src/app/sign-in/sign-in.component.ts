@@ -11,7 +11,7 @@ export class SignInComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   signIn(): void {
-    this.authService.login(); // Log the user in
-    this.router.navigate(['/home']); // Redirect to home page
+    this.authService.login(); 
+    this.router.navigate(['/home']); 
   }
 }
