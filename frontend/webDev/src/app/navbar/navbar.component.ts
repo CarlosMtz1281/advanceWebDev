@@ -18,4 +18,9 @@ export class NavbarComponent {
     this.authService.logout();
     this.router.navigate(['/']);
   }
+  
+  isUserAuthenticated(): boolean {
+    console.log(this.authService.isUserAuthenticated());
+    return this.authService.isUserAuthenticated();
+  }
 }
