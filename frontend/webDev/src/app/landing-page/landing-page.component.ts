@@ -14,4 +14,8 @@ export class LandingPageComponent {
     this.authService.logout();
     this.router.navigate(['/']); 
   }
+
+  navigateToSignIn(): void {
+    this.router.navigate(['/sign-in']);
+  }
 }
