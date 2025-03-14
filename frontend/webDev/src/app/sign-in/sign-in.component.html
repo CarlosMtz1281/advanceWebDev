@@ -1,21 +1,27 @@
 <div class="container">
-    <div class="login-box">
-      <h2 class="title">Sign In</h2>
-      
-      <form>
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="you@example.com" required>
-        </div>
-  
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="********" required>
-        </div>
-  
-        <button class="btn" (click)="signIn()">Sign In</button>
-          </form>
-  
-      <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
-    </div>
+  <div class="login-box">
+    <h2 class="title">Sign In</h2>
+
+    <form>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="********" required>
+      </div>
+
+      <button class="btn" (click)="signIn()">Sign In</button>
+    </form>
+
+<p class="forgot-text">
+  <button class="link-btn" (click)="forgotPassword()">Forgot your password?</button>
+</p>
+<p class="signup-text">
+  Don't have an account? 
+  <button class="link-btn" (click)="signUp()">Sign up</button>
+</p>
   </div>
+</div>

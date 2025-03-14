@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="login-box">
+      <h2 class="title">Sign Up</h2>
+  
+      <form>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+  
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+  
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="********" required>
+        </div>
+  
+        <button class="btn" (click)="signUp()">Sign Up</button>
+      </form>
+  
+      <button class="link-btn" (click)="backToSignIn()">Back To Sign In</button>
+
+    </div>
+  </div>

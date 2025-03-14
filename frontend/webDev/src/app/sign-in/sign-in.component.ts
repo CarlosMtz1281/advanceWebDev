@@ -14,4 +14,11 @@ export class SignInComponent {
     this.authService.login(); 
     this.router.navigate(['/home']); 
   }
+  signUp() {
+    this.router.navigate(['/sign-up']);
+  }
+
+  forgotPassword() {
+    this.router.navigate(['/forgot-password']);
+  }
 }

@@ -1,0 +1,22 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-forgot-password',
+  standalone: true,
+  templateUrl: './forgot-password.component.html',
+  styleUrl: './forgot-password.component.css'
+})
+export class ForgotPasswordComponent {
+  constructor(private router: Router) {}
+
+  sendReset() {
+    alert('Password reset link has been sent to your email!');
+
+    this.router.navigate(['/sign-in']);
+  }
+
+  backToSignIn() {
+    this.router.navigate(['/sign-in']);
+  }
+}

@@ -14,7 +14,7 @@
   }
   
   .container {
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,3 +106,27 @@
       transform: translateY(0);
     }
   }
+
+  /* General Button Styling */
+.link-btn {
+  background: none;
+  border: none;
+  color: #6a0dad; /* Deep Purple */
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.link-btn:hover {
+  color: #4b0082; /* Darker Purple */
+  text-decoration: none;
+}
+
+/* Ensure the buttons are properly spaced */
+.forgot-text,
+.signup-text {
+  text-align: center;
+  margin-top: 10px;
+}
